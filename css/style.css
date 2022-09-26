@@ -172,3 +172,23 @@ img {
   letter-spacing: 1px;
   color: var(--Dark-grayish-blue);
 }
+
+@media screen and (max-width: 765px) {
+  .principal__circle--top {
+    top: -500px;
+    left: -650px;
+  }
+
+  .principal__circle--bottom {
+    bottom: -420px;
+    right: -700px;
+  }
+}
+
+@media screen and (max-width: 395px){
+
+  .card{
+    width: 90%;
+  }
+
+}
