@@ -22,10 +22,15 @@
 
 body {
   width: 100vw;
-  height: 100vh;
   overflow: hidden;
   min-height: 100vh;
+  overflow-y: scroll;
+  height: calc(100vh + 20px);
   font-family: "Kumbh Sans", sans-serif;
+}
+
+a{
+  text-decoration: none;
 }
 
 img {
@@ -46,6 +51,7 @@ img {
   height: 900px;
 
   position: absolute;
+  pointer-events: none;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -64,9 +70,9 @@ img {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 20px);
+  
   position: relative;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +177,17 @@ img {
   padding-top: 5px;
   letter-spacing: 1px;
   color: var(--Dark-grayish-blue);
+}
+
+.attribution{
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.attribution a{
+  color: var(--White);
 }
 
 @media screen and (max-width: 765px) {
